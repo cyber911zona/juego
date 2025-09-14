@@ -1,0 +1,51 @@
+/* Estilos generales del cuerpo de la página */
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #eaeaea;
+}
+
+/* Contenedor del puzzle en forma de grilla 4x4 */
+#puzzle {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 2px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para cada casilla o pieza del puzzle */
+.tile {
+  width: 100px;
+  height: 100px;
+  background-image: url('https://i.postimg.cc/3J6MkYcX/vegeta.jpg');
+  background-size: 400px 400px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: none;
+}
+
+/* Estilo especial para la pieza vacía */
+.empty {
+  background: #ccc;
+  cursor: default;
+}
+
+/* Estilo del botón "Revolver" */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
